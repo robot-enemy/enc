@@ -1,21 +1,17 @@
-# Iconv
+# Iconv.ex
 
-**TODO: Add description**
+A simple (naïve) wrapper around the Iconv commandline utility.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `iconv` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `iconv` to your list of dependencies in
+`mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:iconv, "~> 0.1.0"}
+    {:iconv, github: "robot-enemy/iconv"}
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/iconv](https://hexdocs.pm/iconv).
 
