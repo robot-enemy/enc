@@ -43,4 +43,18 @@ defmodule IconvTest do
 
   end
 
+  #
+  # These test are incorrect.  Need some concrete examples to against our actual
+  # usage.
+  #
+
+  # describe "detect_string_encoding/1" do
+
+  #   test "correctly detects the encoding of a string" do
+  #     str = "EMMANUEL PE\xc3\u0192\xc2\u2018A GOMEZ PORTUGAL"
+
+  #     assert {:ok, "WINDOWS-1252"} = Iconv.detect_string_encoding(str)
+  #   end
+
+  # end
 end
