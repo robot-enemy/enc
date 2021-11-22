@@ -1,4 +1,4 @@
-defmodule Iconv do
+defmodule Enc do
   @moduledoc """
   A set of function wrappers around the `iconv` command line utility.
   """

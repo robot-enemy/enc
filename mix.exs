@@ -1,9 +1,9 @@
-defmodule Iconv.MixProject do
+defmodule Enc.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :iconv,
+      app: :enc,
       version: "0.1.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,

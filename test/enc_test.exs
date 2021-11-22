@@ -1,6 +1,6 @@
-defmodule IconvTest do
+defmodule EncTest do
   use ExUnit.Case
-  doctest Iconv
+  doctest Enc
 
   describe "detect_file_encoding/1" do
 
@@ -36,7 +36,7 @@ defmodule IconvTest do
         # => ["/test/data/UTF-8/1.xml", "/test/data/UTF-8/2.xml"]
 
         for file_path <- file_paths do
-          assert {:ok, encoding} = Iconv.detect_file_encoding(file_path)
+          assert {:ok, encoding} = Enc.detect_file_encoding(file_path)
         end
       end
     end
@@ -53,7 +53,7 @@ defmodule IconvTest do
   #   test "correctly detects the encoding of a string" do
   #     str = "EMMANUEL PE\xc3\u0192\xc2\u2018A GOMEZ PORTUGAL"
 
-  #     assert {:ok, "WINDOWS-1252"} = Iconv.detect_string_encoding(str)
+  #     assert {:ok, "WINDOWS-1252"} = Enc.detect_string_encoding(str)
   #   end
 
   # end
@@ -63,7 +63,7 @@ defmodule IconvTest do
   #   test "strips non-unicode characters from a string" do
   #     str = "EMMANUEL PE\xc3\u0192\xc2\u2018A GOMEZ PORTUGAL"
 
-  #     assert {:ok, "EMMANUEL PE_ƒ_‘A GOMEZ PORTUGAL"} = Iconv.strip_non_unicode_characters(str)
+  #     assert {:ok, "EMMANUEL PE_ƒ_‘A GOMEZ PORTUGAL"} = Enc.strip_non_unicode_characters(str)
   #   end
   # end
 

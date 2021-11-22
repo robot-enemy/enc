@@ -1,4 +1,4 @@
-defmodule Iconv.Encodings do
+defmodule Enc.Encodings do
   @encodings [
     :"437",
     :"850",
