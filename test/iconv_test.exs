@@ -57,4 +57,14 @@ defmodule IconvTest do
   #   end
 
   # end
+
+  # describe "strip_non_unicode_characters/1" do
+
+  #   test "strips non-unicode characters from a string" do
+  #     str = "EMMANUEL PE\xc3\u0192\xc2\u2018A GOMEZ PORTUGAL"
+
+  #     assert {:ok, "EMMANUEL PE_ƒ_‘A GOMEZ PORTUGAL"} = Iconv.strip_non_unicode_characters(str)
+  #   end
+  # end
+
 end

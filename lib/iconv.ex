@@ -26,4 +26,12 @@ defmodule Iconv do
       {_, 1}        -> {:ok, :detection_failed}
     end
   end
+
+  def strip_non_unicode_characters(str) do
+    case System.cmd(@convert_script_path, [str, "UTF-8", "UTF-8"]) do
+      {result, 0} -> {:ok, String.trim(result)}
+      {_, 1}      -> {:error, :strip_failed}
+    end
+  end
+
 end
