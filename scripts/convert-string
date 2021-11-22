@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo "$1\c" | iconv -f $2 -t $3 --byte-subst=_
